@@ -23,7 +23,7 @@ const greeting = {
     intro: "Halo 👋, Ayo kenalan. Nama saya",
     name: "Mochammad Farhan Fansuri",
     // og: "I'm a computer science senior with hefty experience in app development. Previously worked as a web developer at my university, where I built tools to support both students and educators. Currently, I'm developing an educational AI tool aimed at redefining how college students interact with AI.",
-    message: "Saya adalah seorang fresh graduate lulusan prodi Informatika. Saya memiliki beberapa minat di bidang IT. Saya memiliki minat di bidan Web development, AI, dan Cybersecurty yang didukung melalui beberapa project",
+    message: "Saya adalah seorang fresh graduate lulusan prodi Informatika. Saya memiliki beberapa minat di bidang IT. Saya memiliki minat di bidan Web development, AI, dan Cybersecurity yang didukung melalui beberapa project",
     basedLocation: "Malang, Indonesia",
     resumeLink: "https://drive.google.com/file/d/1BEiPuAOCQPWc1RVN5Bn_7KyxhR0HL_bv/view?usp=sharing", // recommended: google drive file share link (change to "anyone on the internet can view")
     logo: {
