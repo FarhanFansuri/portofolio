@@ -74,7 +74,7 @@ const experiences = [
             {
                 sectionHeader: "",
                 bulletPoints: [
-                    "Building next-generation AI products and enterprise software solutions.",
+                    "I am responsible for developing and maintaining full-stack web applications using the Laravel framework with PHP and the Bootstrap framework for the frontend. My role includes designing and implementing user-friendly interfaces.",
                 ]
             }
         ],
