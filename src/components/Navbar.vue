@@ -6,7 +6,7 @@
             <router-link to="/#landing-page">
                 <div :class="['transition-all motion-reduce:transition-none duration-500', showTransition ? 'opacity-1 blur-0' : 'opacity-0 blur-sm']">
                     <div v-if="!portfolio.greeting.logo.custom">
-                        <img :src="getImageUrl(portfolio.greeting.logo.link)" class="scale-75 md:scale-100 origin-left drop-shadow-lg" id="logo-img"/>
+                        <img :src="getImageUrl(portfolio.greeting.logo.link)" class="scale-50 md:scale-25 origin-left drop-shadow-lg" id="logo-img"/>
                     </div>
                     <!-- Custom Logo -->
                     <div v-else>
@@ -101,6 +101,7 @@ import { Bars2Icon, XMarkIcon, MoonIcon, SunIcon } from '@heroicons/vue/24/solid
 import { ref, onMounted, onBeforeUnmount } from 'vue';
 import NavTransition from './transitions/NavTransition.vue';
 import portfolio from '../portfolio'
+import FotoProfile from '../assets/images/profile.jpeg'
 
 const dropDownActive = ref(false)
 const showNavbar = ref(true)

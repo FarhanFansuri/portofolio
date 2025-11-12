@@ -20,7 +20,7 @@ const splashScreen = true // recommended: for best behavior after refresh
 
 // --- 👋 Greeting Section ---
 const greeting = {
-    intro: "Halo 👋, Nama saya adalah",
+    intro: "Halo 👋, Ayo kenalan. Nama saya",
     name: "Mochammad Farhan Fansuri",
     // og: "I'm a computer science senior with hefty experience in app development. Previously worked as a web developer at my university, where I built tools to support both students and educators. Currently, I'm developing an educational AI tool aimed at redefining how college students interact with AI.",
     message: "Saya adalah seorang fresh graduate lulusan prodi Informatika. Saya memiliki beberapa minat di bidang IT. Saya memiliki minat di bidan Web development, AI, dan Cybersecurty yang didukung melalui beberapa project",
@@ -28,7 +28,7 @@ const greeting = {
     resumeLink: "https://drive.google.com/file/d/1BEiPuAOCQPWc1RVN5Bn_7KyxhR0HL_bv/view?usp=sharing", // recommended: google drive file share link (change to "anyone on the internet can view")
     logo: {
         link: "images/logo.png", // use relative path from  parent directory -> ex: images/image.ext
-        custom: true // takes precedence over image logo and allows for custom HTML logo (./components/Navbar.vue)
+        custom: false // takes precedence over image logo and allows for custom HTML logo (./components/Navbar.vue)
     },
     portraitLink: 'images/profile.jpeg'
 }
@@ -36,7 +36,7 @@ const greeting = {
 const socialMediaLinks = {
     github: "https://github.com/FarhanFansuri",
     linkedin: "https://www.linkedin.com/in/farhanfansuri2002",
-    medium: "https://medium.com/@mimaishel",
+    medium: "http://medium.com/@farhanfansuri2023",
 } // to add any additional social media links check out the README.md or src/icons.js file
 
 // --- 😎 About Section ---
@@ -55,7 +55,7 @@ const about = {
         "Tensorflow",
         "MySQL",
     ],
-    photo1Link: "images/portrait1.jpeg",
+    photo1Link: "images/photo2.jpg",
     photo2Link: "images/portrait2.jpeg",
     photo3Link: "images/portrait3.jpeg"
 }
@@ -63,12 +63,12 @@ const about = {
 // --- 🛡️ Experience Section ---
 const experiences = [
     {
-        position: "Software Developer",
+        position: "Fullstack Web Developer Intern",
         company: {
-            name: "IBM",
+            name: "Qwords",
             link: "https://ibm-zcouncil.com/venues/ibm-office-austin-tx/"
         },
-        duration: "May 2025 - Present",
+        duration: "Desember 2023 - Januari 2024",
         content: [
             {
                 sectionHeader: "",
@@ -78,113 +78,17 @@ const experiences = [
             }
         ],
         hashtags: [
-            "JavaScript",
-            "TypeScript",
-            "React.js",
-            "Vue.js",
-            "Node.js",
-            "HTML",
-            "CSS",
-            "Sass",
-        ]
-    },
-    {
-        position: "Founder & Software Developer",
-        company: {
-            name: "EduVaultAI",
-            link: "https://blog.eduvaultai.com"
-        },
-        duration: "July 2024 - April 2025",
-        content: [
-            {
-                sectionHeader: "",
-                bulletPoints: [
-                    "Engineered a high-performance RESTful API backend with FastAPI, supporting a student dashboard and file management system for 5,000+ concurrent users, with files hosted on AWS S3.",
-                    "Containerized MariaDB, ChromaDB, and Llama model instances using Docker, enabling scalable and maintainable backend infrastructure.",
-                    "Automated test data generation using Python, creating 60,000 records/files in 4 min to streamline testing.",
-                    "Architected a scalable backend infrastructure capable of 2x future workloads with minimal code refactoring.",
-                    "Developed responsive UI components in Vue.js and Tailwind.css, reducing backend load by optimizing API calls.",
-                    "Led an Agile (Kanban) team creating milestone-based roadmaps and schedule, engaging in bug reporting, code reviews, maintaining documentation.",
-                    "Estimated compute and hosting costs, gathering user analytics to scale platform accordingly."
-                ]
-            }
-        ],
-        hashtags: [
-            "JavaScript",
-            "TypeScript",
-            "React.js",
-            "Vue.js",
-            "Node.js",
-            "HTML",
-            "CSS",
-            "Sass",
-        ]
-    },
-    {
-        position: "Web Dev Intern",
-        company: {
-            name: "WolfTech",
-            link: "https://tools.wolftech.ncsu.edu/support/index.php/WolfTech_Information_Technology"
-        },
-        duration: "Aug 2022 - Aug 2024",
-        content: [
-            {
-                sectionHeader: ["Williamboard Project - Solo Full-Stack Developer", "May 2023 - July 2024"],
-                bulletPoints: [
-                    "Laid the groundwork for a multi-tenant modern digital sign management system for 360 screens across 50 campus organizations using Laravel, Vue.js, and Inertia.js.",
-                    "Designed MySQL database and Event-Driven app architecture to work with modern PHP and JS technologies.",
-                    "Implemented a tenant permission-based system supporting 5 distinct user roles and organization-specific access.",
-                    "Configured WebSocket's API to collect screen data and display analytics on user-facing dashboards.",
-                    "Automated data migration of 15,000 records to new database structure in under 5 min using custom scripts.",
-                ]
-            },
-            {
-                sectionHeader: ["Other Contributions", "Aug 2022 - May 2023"],
-                bulletPoints: [
-                    "Created an AI-driven LinkedIn post generator, integrating user profiles and files for personalized content.",
-                    "Built a search tool for 20,000 circuit design kits using PHP and SQL, achieving a 200ms average response time.",
-                    "Maintained and debugged email automation, research discovery, and scheduling apps, solving 10+ client issues.",
-                    "Mentored and assisted new interns into the team workflow shortening the onboarding period.",
-                ]
-            },
-            // "Laid the groundwork for a multi-tenant modern digital sign management system for 360 screens across 50 campus organizations using Laravel, Vue.js, and Inertia.js.",
-            // "Designed MySQL database and Event-Driven app architecture to work with modern PHP and JS technologies.",
-            // "Implemented a tenant permission-based system supporting 5 distinct user roles and organization-specific access.",
-            // "Configured WebSocket's API to collect screen data and display analytics on user-facing dashboards.",
-            // "Automated data migration of 15,000 records to new database structure in under 5 min using custom scripts.",
-            // "Created an AI-driven LinkedIn post generator, integrating user profiles and files for personalized content.",
-            // "Built a search tool for 20,000 circuit design kits using PHP and SQL, achieving a 200ms average response time.",
-            // "Maintained and debugged email automation, research discovery, and scheduling apps, solving 10+ client issues.",
-            // "Mentored and assisted new interns into the team workflow shortening the onboarding period.",
-        ],
-        hashtags: [
-            "Laravel",
             "PHP",
-            "MySQL",
-            "JS",
-            "Vue.js",
+            "Laravel",
             "HTML",
-            "Tailwind"
+            "CSS",
+            "Javascript",
+            "HTML",
+            "CSS",
+            "Sass",
+            "Bootstrap"
         ]
     },
-    // {
-    //     position: "Math Tutor",
-    //     company: {
-    //         name: "Mathnasium",
-    //         link: "https://www.mathnasium.com"
-    //     },
-    //     duration: "Jan 2022 - Aug 2022",
-    //     bulletPoints: [
-    //         "Provided math tutoring to students from elementary through high school, covering a range of topics from basic algebra to college-level calculus, using personalized teaching strategies.",
-    //         "Designed and directed individualized learning plans, tailoring math topics evaluation to enhance understanding and improve performance in their school math classes."
-    //     ],
-    //     hashtags: [
-    //         "Calc 1-2",
-    //         "Algebra 1-3",
-    //         "Discrete Math",
-    //         "Statistics"
-    //     ]
-    // }
 ]
 
 // --- 💻 Work Section ---
