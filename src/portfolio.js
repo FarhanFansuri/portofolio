@@ -54,6 +54,7 @@ const about = {
         "Python",
         "Tensorflow",
         "MySQL",
+        "MongoDB",
     ],
     photo1Link: "images/photo2.jpg",
     photo2Link: "images/portrait2.jpeg",
