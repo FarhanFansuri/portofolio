@@ -94,53 +94,59 @@ const experiences = [
 // --- 💻 Work Section ---
 const works = [
     {
-        projectName: "Tiny React Toolbox",
+        projectName: "Cardiovascular AI App ",
         yearCompleted: "2025",
-        description: "Developed a tiny open-source library of highly-reusable and malleable React components (+TS logic) for LAS public domain UI AI analytics project. Sections, toggleables, drop-downs, icons, graphs.",
-        techStack: "TS, React.js, Tailwind.css",
+        description: "Cardiovascular AI APP project adalah project berbasis AI yang digunakan untuk mendeteksi apakah seseorang berpotensi memiliki penyakit kardiovascular. Aplikasi tesebut dilengkapi dengan chatbot yang bisa membantu menjawab pertanyaan seputar cardiovascular.",
+        techStack: "Tensorflow, Python, Streamlit",
         links: [
             {
+                
                 label: "",
                 type: "git",
-                url: "https://github.com/mimaishel/tiny-react-toolbox"
+                url: "https://github.com/FarhanFansuri/capstone-app-5-healthcare"
             },
+              {
+                label: "",
+                type: "external",
+                url: "https://www.canva.com/design/DAGHGZxXinU/kKKZ_XRcWH5aZ4QDzvPEvg/edit?utm_content=DAGHGZxXinU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+            }
         ],
         imageLink: "images/las_dashboard_pic.png",
         alignLeft: false
     },
     {
-        projectName: "EduVaultAI",
+        projectName: "Mental Guardian Project",
         yearCompleted: "2024",
-        description: "Lead the backend and frontend development of a smart study tool transforming course notes into personalized practice exams and study guides.",
-        techStack: "Vue.js, JS, HTML, Tailwind.css, FastAPI, Python, MariaDB, Docker, Llama.ai",
-        links: [
-            {
-                label: "",
-                type: "external",
-                url: "https://blog.eduvaultai.com"
-            }
-        ],
-        imageLink: "images/eduvaultai_dash_pic.png",
-        alignLeft: true
-    },
-    {
-        projectName: "Open-Source Developer Portfolio",
-        yearCompleted: "2023",
-        description: "Designed and developed an open-sourced single page application template to help web developers create visually appealing personal portfolios, focusing on ease of use and customization. Built with Vue.js, JS, HTML, Tailwind CSS, the project achieved 27 stars and 14 forks on GitHub.",
-        techStack: "Vue.js, JS, HTML, Tailwind.css",
+        description: "Mental Guardian adalah aplikasi android berbasis AI yang bertujuan untuk membantu pengguna dalam menjaga kesehatan mental mereka. Aplikasi ini menyediakan fitur seperti chatbot untuk dukungan emosional, pelacakan suasana hati, dan sumber daya kesehatan mental.",
+        techStack: "Docker, Google Cloud, Python, Tensorflow, Flask, Android",
         links: [
             {
                 label: "",
                 type: "git",
-                url: "https://github.com/mimaishel/webdev_portfolio"
+                url: "https://github.com/MentalGuardians"
             },
-            {
+              {
                 label: "",
                 type: "external",
-                url: "https://maxshelepov.com"
+                url: "https://www.canva.com/design/DAF5WzIMpec/GSrObcV_piVciX7sMbBv0g/edit?utm_content=DAF5WzIMpec&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
             }
         ],
-        imageLink: "images/webdevportfolio_pic.png",
+        imageLink: "images/bangkit.jpg",
+        alignLeft: true
+    },
+    {
+        projectName: "Aplikasi Restauran Berbasis Web",
+        yearCompleted: "2022",
+        description: "Aplikasi web untuk manajemen restoran yang mencakup fitur seperti pemesanan makanan, manajemen menu, dan sistem pembayaran online. Aplikasi ini dirancang untuk meningkatkan efisiensi operasional restoran dan memberikan pengalaman pengguna yang lebih baik.",
+        techStack: "Angular, TypeScript, Bootstrap, Node.js, Express.js, MongoDB",
+        links: [
+            {
+                label: "",
+                type: "git",
+                url: "https://github.com/FarhanFansuri/Project-ZettaMiniProject"
+            }
+        ],
+        imageLink: "images/restaurant_jawa.jpg",
         alignLeft: false
     },
     // {
