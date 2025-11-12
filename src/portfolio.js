@@ -111,7 +111,7 @@ const works = [
                 url: "https://www.canva.com/design/DAGHGZxXinU/kKKZ_XRcWH5aZ4QDzvPEvg/edit?utm_content=DAGHGZxXinU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
             }
         ],
-        imageLink: "images/las_dashboard_pic.png",
+        imageLink: "images/app.png",
         alignLeft: false
     },
     {
