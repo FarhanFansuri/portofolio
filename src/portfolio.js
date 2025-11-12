@@ -94,7 +94,7 @@ const experiences = [
 // --- 💻 Work Section ---
 const works = [
     {
-        projectName: "Cardiovascular AI App ",
+        projectName: "HartZorg : Cardiovascular AI App ",
         yearCompleted: "2025",
         description: "Cardiovascular AI APP project adalah project berbasis AI yang digunakan untuk mendeteksi apakah seseorang berpotensi memiliki penyakit kardiovascular. Aplikasi tesebut dilengkapi dengan chatbot yang bisa membantu menjawab pertanyaan seputar cardiovascular.",
         techStack: "Tensorflow, Python, Streamlit",
