@@ -131,7 +131,7 @@ const works = [
                 url: "https://www.canva.com/design/DAF5WzIMpec/GSrObcV_piVciX7sMbBv0g/edit?utm_content=DAF5WzIMpec&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
             }
         ],
-        imageLink: "images/bangkit.jpg",
+        imageLink: "images/mental.png",
         alignLeft: true
     },
     {
