@@ -74,7 +74,7 @@ const experiences = [
             {
                 sectionHeader: "",
                 bulletPoints: [
-                    "I am responsible for developing and maintaining full-stack web applications using the Laravel framework with PHP and the Bootstrap framework for the frontend. My role includes designing and implementing user-friendly interfaces.",
+                    "Saya bertanggung jawab untuk mengembangkan dan memelihara aplikasi web full-stack menggunakan framework Laravel untuk backend dan Bootstrap untuk frontend. Peran saya mencakup merancang dan mengimplementasikan antarmuka yang ramah pengguna.",
                 ]
             }
         ],
@@ -101,7 +101,7 @@ const experiences = [
             {
                 sectionHeader: "",
                 bulletPoints: [
-                    "I am responsible for developing and maintaining full-stack web applications using the Vue.js framework for the frontend and Golang with the Gin framework for the backend.",
+                    "Saya bertanggung jawab untuk mengembangkan dan memelihara aplikasi web full-stack menggunakan framework Vue.js untuk frontend dan Golang dengan framework Gin untuk backend.",
                 ]
             }
         ],
