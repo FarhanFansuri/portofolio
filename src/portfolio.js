@@ -25,7 +25,7 @@ const greeting = {
     // og: "I'm a computer science senior with hefty experience in app development. Previously worked as a web developer at my university, where I built tools to support both students and educators. Currently, I'm developing an educational AI tool aimed at redefining how college students interact with AI.",
     message: "Saya adalah seorang fresh graduate lulusan prodi Informatika. Saya memiliki beberapa minat di bidang IT. Saya memiliki minat di bidan Web development, AI, dan Cybersecurity yang didukung melalui beberapa project",
     basedLocation: "Malang, Indonesia",
-    resumeLink: "https://drive.google.com/file/d/1SUbexEQ3uQU3MZxkW6KnDgGpP_cCg583/view?usp=sharing", // recommended: google drive file share link (change to "anyone on the internet can view")
+    resumeLink: "https://drive.google.com/file/d/1X-KAtsIX3cee9j7TG54rmsE5Ue1oAcOB/view?usp=sharing", // recommended: google drive file share link (change to "anyone on the internet can view")
     logo: {
         link: "images/logo.png", // use relative path from  parent directory -> ex: images/image.ext
         custom: false // takes precedence over image logo and allows for custom HTML logo (./components/Navbar.vue)
@@ -52,7 +52,7 @@ const about = {
         "Node.js",
         "Vue.js",
         "Python",
-        "Tensorflow",
+        "Golang",
         "MySQL",
         "MongoDB",
     ],
@@ -88,6 +88,33 @@ const experiences = [
             "CSS",
             "Sass",
             "Bootstrap"
+        ]
+    },
+    {
+        position: "Fullstack Web Developer",
+        company: {
+            name: "PT SCHOOLTECH INDONESIA",
+            link: "https://www.schooltechindonesia.com/"
+        },
+        duration: "November 2025 - Now",
+        content: [
+            {
+                sectionHeader: "",
+                bulletPoints: [
+                    "I am responsible for developing and maintaining full-stack web applications using the Vue.js framework for the frontend and Golang with the Gin framework for the backend.",
+                ]
+            }
+        ],
+        hashtags: [
+            "Golang",
+            "Vue.js",
+            "HTML",
+            "CSS",
+            "Javascript",
+            "HTML",
+            "CSS",
+            "Primeflex",
+            "PrimeVue"
         ]
     },
 ]
