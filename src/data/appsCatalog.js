@@ -1,4 +1,4 @@
-import { CheckCircleIcon, BanknotesIcon, ShoppingBagIcon } from '@heroicons/vue/24/outline'
+import { CheckCircleIcon, BanknotesIcon, ShoppingBagIcon, CalendarDaysIcon, ClockIcon, ShieldCheckIcon, CommandLineIcon } from '@heroicons/vue/24/outline'
 
 export const appsCatalog = [
   {
@@ -18,5 +18,29 @@ export const appsCatalog = [
     description: 'Lihat katalog produk, detail produk, lalu tambahkan barang ke keranjang.',
     icon: ShoppingBagIcon,
     route: '/apps/ecommerce'
+  },
+  {
+    title: 'Timeline',
+    description: 'Lihat perjalanan pendidikan, project, pengalaman, dan milestone personal secara terurut.',
+    icon: CalendarDaysIcon,
+    route: '/timeline'
+  },
+  {
+    title: 'Focus Timer',
+    description: 'Timer bergaya pomodoro untuk fokus dan istirahat dengan kontrol sederhana.',
+    icon: ClockIcon,
+    route: '/apps/timer'
+  },
+  {
+    title: 'Security Toolkit',
+    description: 'Toolkit edukatif untuk basic web security testing secara aman.',
+    icon: ShieldCheckIcon,
+    route: '/apps/security'
+  },
+  {
+    title: 'API Playground',
+    description: 'Test HTTP request interaktif langsung dari browser — GET, POST, PUT, DELETE dengan response viewer.',
+    icon: CommandLineIcon,
+    route: '/apps/api'
   }
 ]

@@ -10,7 +10,7 @@
       </div>
 
       <div v-if="loading" class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        <div v-for="n in 3" :key="n" class="h-36 animate-pulse rounded-2xl bg-slate-200 dark:bg-slate-800" />
+        <div v-for="n in skeletonCount" :key="n" class="h-36 animate-pulse rounded-2xl bg-slate-200 dark:bg-slate-800" />
       </div>
 
       <div v-else-if="error" class="rounded-xl border border-rose-200 bg-rose-50 p-4 text-rose-700">
@@ -41,6 +41,7 @@ import { appsCatalog } from '../data/appsCatalog'
 const loading = ref(true)
 const error = ref('')
 const catalog = ref([])
+const skeletonCount = ref(appsCatalog.length)
 
 onMounted(() => {
   try {
