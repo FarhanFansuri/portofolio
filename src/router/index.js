@@ -1,5 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import MainView from '../views/MainView.vue'
+import AppsView from '../views/AppsView.vue'
+import TodoAppView from '../views/apps/TodoAppView.vue'
+import FinanceAppView from '../views/apps/FinanceAppView.vue'
+import EcommerceAppView from '../views/apps/EcommerceAppView.vue'
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -8,27 +12,57 @@ const router = createRouter({
             path: '/',
             name: 'main',
             component: MainView
+        },
+        {
+            path: '/apps',
+            name: 'apps',
+            component: AppsView
+        },
+        {
+            path: '/apps/todo',
+            name: 'apps-todo',
+            component: TodoAppView
+        },
+        {
+            path: '/apps/finance',
+            name: 'apps-finance',
+            component: FinanceAppView
+        },
+        {
+            path: '/apps/ecommerce',
+            name: 'apps-ecommerce',
+            component: EcommerceAppView
         }
     ],
     scrollBehavior(to, from, savedPosition) {
-        if (to.hash && to.hash == '#landing-page') {
+        if (savedPosition) {
+            return savedPosition
+        }
+
+        if (to.path === '/' && to.hash && to.hash == '#landing-page') {
             return {
                 top: 0,
                 behavior: window.matchMedia('(prefers-reduced-motion: no-preference)').matches ? 'smooth' : 'instant'
             }
         }
-        if (to.hash) {
+        if (to.path === '/' && to.hash) {
             return {
                 el: to.hash,
                 top: isScrollingUp(to.hash) ? getOffsetHeight() : 0,
                 behavior: window.matchMedia('(prefers-reduced-motion: no-preference)').matches ? 'smooth' : 'instant'
             }
         }
+
+        return { top: 0 }
     },
 })
 
 let isScrollingUp = (elem_id) => {
   const elem = document.querySelector(elem_id)
+  if (!elem) {
+    return false
+  }
+
   const toScrollPos = elem.getBoundingClientRect().top
 
   return toScrollPos < 0
