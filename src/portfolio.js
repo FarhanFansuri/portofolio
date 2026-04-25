@@ -65,6 +65,7 @@ const about = {
 const experiences = [
     {
         position: "Fullstack Web Developer",
+        current: true,
         company: {
             name: "PT SCHOOLTECH INDONESIA",
             link: "https://www.schooltechindonesia.com/"
