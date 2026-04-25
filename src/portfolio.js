@@ -64,33 +64,6 @@ const about = {
 // --- 🛡️ Experience Section ---
 const experiences = [
     {
-        position: "Fullstack Web Developer Intern",
-        company: {
-            name: "Qwords",
-            link: "https://ibm-zcouncil.com/venues/ibm-office-austin-tx/"
-        },
-        duration: "Desember 2023 - Januari 2024",
-        content: [
-            {
-                sectionHeader: "",
-                bulletPoints: [
-                    "Saya bertanggung jawab untuk mengembangkan dan memelihara aplikasi web full-stack menggunakan framework Laravel untuk backend dan Bootstrap untuk frontend. Peran saya mencakup merancang dan mengimplementasikan antarmuka yang ramah pengguna.",
-                ]
-            }
-        ],
-        hashtags: [
-            "PHP",
-            "Laravel",
-            "HTML",
-            "CSS",
-            "Javascript",
-            "HTML",
-            "CSS",
-            "Sass",
-            "Bootstrap"
-        ]
-    },
-    {
         position: "Fullstack Web Developer",
         company: {
             name: "PT SCHOOLTECH INDONESIA",
@@ -117,6 +90,34 @@ const experiences = [
             "PrimeVue"
         ]
     },
+    {
+        position: "Fullstack Web Developer Intern",
+        company: {
+            name: "Qwords",
+            link: "https://ibm-zcouncil.com/venues/ibm-office-austin-tx/"
+        },
+        duration: "Desember 2023 - Januari 2024",
+        content: [
+            {
+                sectionHeader: "",
+                bulletPoints: [
+                    "Saya bertanggung jawab untuk mengembangkan dan memelihara aplikasi web full-stack menggunakan framework Laravel untuk backend dan Bootstrap untuk frontend. Peran saya mencakup merancang dan mengimplementasikan antarmuka yang ramah pengguna.",
+                ]
+            }
+        ],
+        hashtags: [
+            "PHP",
+            "Laravel",
+            "HTML",
+            "CSS",
+            "Javascript",
+            "HTML",
+            "CSS",
+            "Sass",
+            "Bootstrap"
+        ]
+    },
+    
 ]
 
 // --- 💻 Work Section ---

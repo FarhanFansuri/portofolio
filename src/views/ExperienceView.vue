@@ -4,11 +4,15 @@
             <h1 class="text-3xl font-bold pr-5">🛡️ Experience</h1>
             <div class="flex-grow border-t border-black dark:border-white border-1"></div>
         </div>
-        <div :class="['flex flex-col space-y-4 mb-36 transition-all motion-reduce:transition-none duration-500 delay-300', visible ? 'translate-y-0 opacity-1 blur-0' : 'translate-y-4 opacity-0 blur-sm']">
+        <div :class="['relative mb-36 pl-5 sm:pl-8 transition-all motion-reduce:transition-none duration-500 delay-300', visible ? 'translate-y-0 opacity-1 blur-0' : 'translate-y-4 opacity-0 blur-sm']">
+            <div class="absolute left-[10px] top-0 h-full w-[2px] bg-slate-200 dark:bg-slate-700 sm:left-[15px]"></div>
+
+            <div class="space-y-5">
             <ExperienceCard
                 v-for="(experience, index) in content"
                 :key="index" :experience="experience"
             />
+            </div>
         </div>
     </section>
 </template>
