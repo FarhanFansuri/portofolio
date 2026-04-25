@@ -117,8 +117,35 @@ const clearTimer = () => {
   state.isRunning = false
 }
 
+const playDoneSound = () => {
+  try {
+    const ctx = new (window.AudioContext || window.webkitAudioContext)()
+
+    const beep = (startAt, freq, duration) => {
+      const osc = ctx.createOscillator()
+      const gain = ctx.createGain()
+      osc.connect(gain)
+      gain.connect(ctx.destination)
+      osc.type = 'sine'
+      osc.frequency.setValueAtTime(freq, startAt)
+      gain.gain.setValueAtTime(0.35, startAt)
+      gain.gain.exponentialRampToValueAtTime(0.001, startAt + duration)
+      osc.start(startAt)
+      osc.stop(startAt + duration)
+    }
+
+    const t = ctx.currentTime
+    beep(t, 880, 0.15)
+    beep(t + 0.18, 1100, 0.15)
+    beep(t + 0.36, 1320, 0.35)
+  } catch {
+    // Web Audio API not available
+  }
+}
+
 const celebrate = () => {
   isCelebrating.value = true
+  playDoneSound()
   setTimeout(() => {
     isCelebrating.value = false
   }, 2000)

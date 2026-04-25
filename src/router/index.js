@@ -8,6 +8,8 @@ import TimelineView from '../views/TimelineView.vue'
 import TimerView from '../views/TimerView.vue'
 import SecurityView from '../views/SecurityView.vue'
 import APIPlaygroundView from '../views/APIPlaygroundView.vue'
+import DocsHome from '../views/documentation/DocsHome.vue'
+import DocsDetail from '../views/documentation/DocsDetail.vue'
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -56,6 +58,16 @@ const router = createRouter({
             path: '/apps/api',
             name: 'apps-api',
             component: APIPlaygroundView
+        },
+        {
+            path: '/documentation',
+            name: 'documentation-home',
+            component: DocsHome
+        },
+        {
+            path: '/documentation/:category/:doc?',
+            name: 'documentation-detail',
+            component: DocsDetail
         }
     ],
     scrollBehavior(to, from, savedPosition) {
@@ -73,6 +85,14 @@ const router = createRouter({
             return {
                 el: to.hash,
                 top: isScrollingUp(to.hash) ? getOffsetHeight() : 0,
+                behavior: window.matchMedia('(prefers-reduced-motion: no-preference)').matches ? 'smooth' : 'instant'
+            }
+        }
+
+        if (to.hash) {
+            return {
+                el: to.hash,
+                top: 96,
                 behavior: window.matchMedia('(prefers-reduced-motion: no-preference)').matches ? 'smooth' : 'instant'
             }
         }
