@@ -9,6 +9,8 @@ import TimelineView from '../views/TimelineView.vue'
 import TimerView from '../views/TimerView.vue'
 import SecurityView from '../views/SecurityView.vue'
 import APIPlaygroundView from '../views/APIPlaygroundView.vue'
+import SecurityLabHomeView from '../views/security/SecurityLabHomeView.vue'
+import SecurityLabDetailView from '../views/security/SecurityLabDetailView.vue'
 import DocsHome from '../views/documentation/DocsHome.vue'
 import DocsDetail from '../views/documentation/DocsDetail.vue'
 
@@ -64,6 +66,16 @@ const router = createRouter({
             path: '/apps/api',
             name: 'apps-api',
             component: APIPlaygroundView
+        },
+        {
+            path: '/security-lab',
+            name: 'security-lab-home',
+            component: SecurityLabHomeView
+        },
+        {
+            path: '/security-lab/:slug',
+            name: 'security-lab-detail',
+            component: SecurityLabDetailView
         },
         {
             path: '/documentation',
