@@ -7,6 +7,12 @@
           <h2 class="text-2xl font-bold text-slate-800 dark:text-white">Mini Apps Playground</h2>
           <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Pilih aplikasi untuk melihat implementasi fitur secara langsung.</p>
         </div>
+        <router-link
+          to="/apps/ai-projects"
+          class="rounded-lg border border-cyan-400/50 bg-cyan-500/10 px-4 py-2 text-sm font-semibold text-cyan-700 transition hover:bg-cyan-500/20 dark:text-cyan-300"
+        >
+          AI Project
+        </router-link>
       </div>
 
       <div v-if="loading" class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">

@@ -4,6 +4,7 @@ import AppsView from '../views/AppsView.vue'
 import TodoAppView from '../views/apps/TodoAppView.vue'
 import FinanceAppView from '../views/apps/FinanceAppView.vue'
 import EcommerceAppView from '../views/apps/EcommerceAppView.vue'
+import AIProjectsView from '../views/apps/AIProjectsView.vue'
 import TimelineView from '../views/TimelineView.vue'
 import TimerView from '../views/TimerView.vue'
 import SecurityView from '../views/SecurityView.vue'
@@ -38,6 +39,11 @@ const router = createRouter({
             path: '/apps/ecommerce',
             name: 'apps-ecommerce',
             component: EcommerceAppView
+        },
+        {
+            path: '/apps/ai-projects',
+            name: 'apps-ai-projects',
+            component: AIProjectsView
         },
         {
             path: '/timeline',
