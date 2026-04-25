@@ -31,23 +31,26 @@
             <div class="hidden w-full xl:block xl:w-auto items-center" id="navbar-default">
                 <ul class="font-medium flex flex-col p-4 xl:p-0 mt-4 xl:flex-row xl:space-x-8 xl:mt-0">
                     <li :class="['transition-all motion-reduce:transition-none duration-500 delay-[50ms]', showTransition ? 'translate-y-0 opacity-1' : '-translate-y-4 opacity-0']">
-                        <router-link class="block py-2 pl-3 pr-4 text-slate-700 hover:text-link-color dark:text-slate-200" to="/#about-section">About Me</router-link>
+                        <router-link class="block py-2 pl-3 pr-4 text-slate-700 hover:text-link-color dark:text-slate-200" to="/#landing-page">Home</router-link>
                     </li>
                     <li :class="['transition-all motion-reduce:transition-none duration-500 delay-[100ms]', showTransition ? 'translate-y-0 opacity-1' : '-translate-y-4 opacity-0']">
-                        <router-link class="block py-2 pl-3 pr-4 text-slate-700 hover:text-link-color dark:text-slate-200" to="/#experience-section">Experience</router-link>
+                        <router-link class="block py-2 pl-3 pr-4 text-slate-700 hover:text-link-color dark:text-slate-200" to="/#about-section">About Me</router-link>
                     </li>
                     <li :class="['transition-all motion-reduce:transition-none duration-500 delay-[150ms]', showTransition ? 'translate-y-0 opacity-1' : '-translate-y-4 opacity-0']">
-                        <router-link class="block py-2 pl-3 pr-4 text-slate-700 hover:text-link-color dark:text-slate-200" to="/apps">Portfolio</router-link>
+                        <router-link class="block py-2 pl-3 pr-4 text-slate-700 hover:text-link-color dark:text-slate-200" to="/#experience-section">Experience</router-link>
                     </li>
                     <li :class="['transition-all motion-reduce:transition-none duration-500 delay-[200ms]', showTransition ? 'translate-y-0 opacity-1' : '-translate-y-4 opacity-0']">
-                        <router-link class="block py-2 pl-3 pr-4 text-slate-700 hover:text-link-color dark:text-slate-200" to="/documentation">Documentation</router-link>
+                        <router-link class="block py-2 pl-3 pr-4 text-slate-700 hover:text-link-color dark:text-slate-200" to="/apps">Portfolio</router-link>
                     </li>
                     <li :class="['transition-all motion-reduce:transition-none duration-500 delay-[250ms]', showTransition ? 'translate-y-0 opacity-1' : '-translate-y-4 opacity-0']">
+                        <router-link class="block py-2 pl-3 pr-4 text-slate-700 hover:text-link-color dark:text-slate-200" to="/documentation">Documentation</router-link>
+                    </li>
+                    <li :class="['transition-all motion-reduce:transition-none duration-500 delay-[300ms]', showTransition ? 'translate-y-0 opacity-1' : '-translate-y-4 opacity-0']">
                         <a :href="portfolio.greeting.resumeLink" target="_blank">
                             <button class="block py-2 px-6 bg-transparent border border-button-color shadow-sm shadow-button-color text-button-color transition ease-in-out hover:bg-button-color hover:text-white hover:dark:text-slate-300 focus:bg-button-color focus:text-white active:bg-button-color active:text-white duration-300">Resume</button>
                         </a>
                     </li>
-                    <li :class="['transition-all motion-reduce:transition-none duration-500 delay-[250ms]', showTransition ? 'translate-y-0 opacity-1' : '-translate-y-4 opacity-0']">
+                    <li :class="['transition-all motion-reduce:transition-none duration-500 delay-[300ms]', showTransition ? 'translate-y-0 opacity-1' : '-translate-y-4 opacity-0']">
                         <button v-if="darkModeActive" class="block py-2" @click="$emit('toggle-dark')">
                             <MoonIcon class="h-7 w-7 text-slate-300 hover:text-button-color"/>
                         </button>
@@ -63,6 +66,9 @@
         <NavTransition>
             <div v-show="dropDownActive" class="block w-full absolute xl:hidden px-9 pb-4 bg-white/[.95] text-slate-800 dark:bg-slate-900/[.92] dark:text-slate-200 backdrop-blur-sm">
                 <ul>
+                    <li>
+                        <router-link class="block py-5 text-slate-700 hover:text-link-color dark:text-slate-200" to="/#landing-page">🏠 Home</router-link>
+                    </li>
                     <li>
                         <router-link class="block py-5 text-slate-700 hover:text-link-color dark:text-slate-200" to="/#about-section">😎 About Me</router-link>
                     </li>
