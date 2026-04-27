@@ -47,8 +47,8 @@ const about = {
     ], // Separated items are paragraphs
     techStack: [
         "JavaScript",
-        "PHP",
-        "Laravel",
+        "React",
+        "Next.js",
         "Node.js",
         "Vue.js",
         "Python",
